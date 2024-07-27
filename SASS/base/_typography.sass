@@ -21,6 +21,12 @@ body
 		animation-fill-mode: backwards
 		animation-timing-function: ease
 		backface-visibility: hidden
+		@include respond(tab-land)
+			font-size: 4.2rem
+		@include respond(tab-port)
+			font-size: 3.5rem
+			letter-spacing: .2rem
+			margin-bottom: 0
 
 	&__second
 		display: block
@@ -35,6 +41,12 @@ body
 		animation-fill-mode: backwards
 		backface-visibility: hidden
 		margin-bottom: 5rem
+		@include respond(tab-land)
+			font-size: 3rem
+			margin-bottom: 3.5rem
+		@include respond(tab-port)
+			font-size: 2.5rem
+			letter-spacing: .25rem
 
 .title-second
 	font-size: $font-size-paragraph-h2
@@ -44,6 +56,11 @@ body
 	background: linear-gradient(90deg, $color-brown-light, $color-brown-dark)
 	-webkit-background-clip: text
 	color: transparent
+	@include respond(tab-land)
+		font-size: 3rem
+	@include respond(tab-port)
+		letter-spacing: .6rem
+
 	&_white
 		color: $color-white
 
@@ -52,9 +69,16 @@ body
 	letter-spacing: .2rem
 	text-transform: uppercase
 	font-weight: 700
+	@include respond(tab-land)
+		font-size: 1.8rem
+	@include respond(tab-port)
+		letter-spacing: .1rem
+		font-size: 1.9rem
 
 .paragraph
 	font-size: $font-size-paragraph
 	letter-spacing: 0.2rem
 	line-height: 140%
 	font-weight: 500
+	@include respond(tab-land)
+		font-size: 1.5rem
